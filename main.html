@@ -4,12 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Styled Table</title>
     <link rel="stylesheet" href="styles.css">
+	<style>
+		 body {
+            font-family: Arial, sans-serif;
+            background-color: 300ms;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            background-color: #ffffff;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover td {
+            background-color: #e0f7fa;
+        }
+
+        caption {
+            font-size: 24px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        /* Styling for table borders */
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        /* Custom width for columns */
+        th:nth-child(1), td:nth-child(1) {
+            width: 25%;
+        }
+
+        th:nth-child(2), td:nth-child(2) {
+            width: 25%;
+        }
+
+        th:nth-child(3), td:nth-child(3) {
+            width: 25%;
+        }
+
+        th:nth-child(4), td:nth-child(4) {
+            width: 25%;
+        }
+	</style>
 </head>
 <body>
     <!-- add table here -->
-
-        
+	<table>
+	<thead>
+		<tr>
+			<th>NAME</th>
+			<th>KILLS</th>
+			<th>SAVED</th>
+			<th>DEATHS</th>
+			<th>REVIVES</th>
+			<th>WIN</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Hackerman</td>
+			<td>10</td>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>Cool Doggo</td>
+			<td>13</td>
+			<td>4</td>
+			<td>8</td>
+			<td>7</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>Andrews</td>
+			<td>19</td>
+			<td>2</td>
+			<td>10</td>
+			<td>11</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>Strawberry</td>
+			<td>2</td>
+			<td>9</td>
+			<td>3</td>
+			<td>5</td>
+			<td>1</td>
+		</tr>
+	</tbody>
+	</table>
 </body>
 </html>
